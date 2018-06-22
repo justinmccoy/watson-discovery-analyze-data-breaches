@@ -54,6 +54,16 @@ Watson Discovery Service can import documents in various formats, including PDFs
   <img width="600" src="doc/source/images/sample1.png">
 </p>
 
+A Ruby script is provided for converting this .csv file of cyber security breaches between 2004 and 2017 to JSON, but the file has already been converted for you and the resulting JSON is available in the `data/breaches` directory of this repository.
+
+To run the script yourself you need Ruby and the smarter_csv gem installed.
+```#Install smarter_csv gem
+sudo gem install smarter_csv
+
+#Run Ruby Script to convert .csv to JSON
+ruby bin/convert.rb
+```
+
 
 ### 3. Load the Discovery files
 
